@@ -1,0 +1,24 @@
+LED_R
+REM First Stage Payload Code...
+
+REM Wait for operator to assess target before executing second stage.
+WAIT_FOR_BUTTON_PRESS
+
+LED_G
+REM Second Stage Payload Code...
+
+REM A slightly more advanced "Hello, World" for macOS
+DELAY 3000
+REM Open Spotlight Search
+COMMAND SPACE
+REM Open the text editor
+STRING TextEdit
+ENTER
+DELAY 2000
+COMMAND n
+DELAY 2000
+STRING echo Hello, World! MacOS Example 
+
+ENTER
+REM Write a really long lorem ipsum paragraph
+STRING Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum semper velit vitae semper. Nunc consequat enim eget massa blandit ultrices. Proin ac efficitur velit. In hac habitasse platea dictumst. Vivamus feugiat risus ut euismod convallis. Aliquam ultrices nunc quis erat faucibus tempor. In gravida, felis ut fermentum maximus, orci lectus viverra velit, id pulvinar nulla mauris bibendum tortor. Mauris a varius enim. Duis varius eget quam id ornare.
